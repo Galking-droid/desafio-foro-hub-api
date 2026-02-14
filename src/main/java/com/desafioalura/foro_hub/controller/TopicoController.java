@@ -41,16 +41,11 @@ public class TopicoController {
     @PutMapping("/{id}")
     @Transactional
     public ResponseEntity actualizar(@PathVariable Long id, @RequestBody @Valid DatosActualizarTopico datos) {
-        // 1. Verificamos existencia
         if (!repository.existsById(id)) {
             return ResponseEntity.notFound().build();
         }
-
-        // 2. Obtenemos la referencia y actualizamos
         var topico = repository.getReferenceById(id);
         topico.actualizarInformacion(datos);
-
-        // 3. Retornamos la respuesta profesional
         return ResponseEntity.ok(new DatosDetalleTopico(topico));
     }
     @DeleteMapping("/{id}")
