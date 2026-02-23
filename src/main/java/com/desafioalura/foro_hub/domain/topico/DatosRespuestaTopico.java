@@ -2,7 +2,7 @@ package com.desafioalura.foro_hub.domain.topico;
 
 import java.time.LocalDateTime;
 
-public record DatosDetalleTopico(
+public record DatosRespuestaTopico(
         Long id,
         String titulo,
         String mensaje,
@@ -11,7 +11,7 @@ public record DatosDetalleTopico(
         String autor,
         String curso
 ) {
-    public DatosDetalleTopico(Topico topico) {
+    public DatosRespuestaTopico(Topico topico) {
         this(topico.getId(),
                 topico.getTitulo(),
                 topico.getMensaje(),
