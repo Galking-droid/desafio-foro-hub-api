@@ -1,6 +1,6 @@
 # Foro Hub API - Challenge Oracle Next Education
 
-API REST desarrollada con Spring Boot para la gestión de tópicos de un foro, implementando validaciones de negocio, persistencia de datos y seguridad.
+API REST de alta disponibilidad desarrollada con Spring Boot 3 para la gestión técnica de tópicos en un foro. Este proyecto implementa una arquitectura por capas, garantizando seguridad mediante JWT y persistencia robusta con MySQL.
 
 ## 🛠️ Stack Tecnológico
 - **Java 17**
@@ -9,6 +9,7 @@ API REST desarrollada con Spring Boot para la gestión de tópicos de un foro, i
 - **MySQL / Flyway** (Migraciones de base de datos)
 - **Spring Security** (Autenticación/Autorización mediante JWT)
 - **Maven** (Gestor de dependencias)
+- **SpringDoc OpenAPI (Swagger)** (Documentación interactiva de la API)
 
 ## 📋 Requisitos del Proyecto
 Basado en los lineamientos del desafío Alura ONE:
@@ -40,4 +41,4 @@ spring.datasource.password=CONTRASEÑA
 | `DELETE`| `/topicos/{id}` | 204 No Content | JWT Requerido |
 
 ### Desarrollado por:
-Joseph Gama.
+Joseph Gama. Systems Technician / Analyst
